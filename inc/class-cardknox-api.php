@@ -14,7 +14,7 @@ if( !class_exists( 'Give_Cardknox_API') ){
     /**
   	* Cardknox API Endpoint
   	*/
-    const ENDPOINT = "'https://x1.cardknox.com/gateway";
+    const ENDPOINT = "https://x1.cardknox.com/gateway";
 
     /**
     * @return string
@@ -61,8 +61,8 @@ if( !class_exists( 'Give_Cardknox_API') ){
     		);
         // return if error in Response
         if ( is_wp_error( $response ) || empty( $response['body'] ) ) {
-    			self::log( 'Error Response: ' . print_r( $response, true ) );
-    			return new WP_Error( 'cardknox_error', __( 'There was a problem connecting to the payment gateway.', 'give-cardknox' ) );
+    			// self::log( 'Error Response: ' . print_r( $response, true ) );
+         	return new WP_Error( 'cardknox_error', __( 'There was a problem connecting to the payment gateway.', 'give-cardknox' ) );
     		}
         // Parse Response
         $parsed_response = [];

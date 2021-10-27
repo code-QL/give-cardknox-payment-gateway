@@ -3,7 +3,7 @@
   Plugin Name: Give - Cardknox Payment Gateway Add-on
   Author: Vishal Tanwar
   Author URI: https://github.com/code-QL
-  Version: 0.0.1
+  Version: 1.0.0
   Description: Cardknox Payment Gateway add-on for Give Donation
   Text Domain: give-cardknox
 */

@@ -252,13 +252,13 @@ if( ! class_exists( 'Give_CardKnox_Credit_Card' ) ){
                 );
 
                 $response = $this->request( $payment_request );
-		if( $response['xResult'] == "A" ){
+		//if( $response['xResult'] == "A" ){
 			// Update donation status to `completed`.
                 	give_update_payment_status( $donation_id, 'completed' );
 
 			// Success. Send user to success page.
 			give_send_to_success_page();
-		}
+		//}
 
             }
             else {// Send user back to checkout.

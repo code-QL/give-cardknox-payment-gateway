@@ -248,7 +248,7 @@ if( ! class_exists( 'Give_CardKnox_Credit_Card' ) ){
                     'xBillCompany' =>  $posted_data['post_data']['give_company_name'],
                     'xComments' =>  $posted_data['post_data']['give_comment'],
                     'xExistingCustomer' => 'yes',
-                    'xCustReceipt'  => true,
+                    'xCustReceipt'  => false,
                 );
 
                 $response = $this->request( $payment_request );
